@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="BaseDef" template="/WEB-INF/page/JLCLayout.jsp">
+		<put-attribute name="HEADER" value="/WEB-INF/page/header.jsp" />
+		<put-attribute name="LMENU" value="/WEB-INF/page/lmenu.jsp" />
+		<put-attribute name="BODY" value=""/>
+		<put-attribute name="FOOTER" value="/WEB-INF/page/footer.jsp" />
+	</definition>
+
+	<definition name="HomeDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/page/welcome.jsp"></put-attribute>
+	</definition>
+
+	<definition name="AddStudentDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/page/addstudent.jsp"></put-attribute>
+	</definition>
+
+	<definition name="SearchStudentDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/page/searchstudent.jsp"></put-attribute>
+	</definition>
+
+<definition name="LoginDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/page/login.jsp"></put-attribute>
+	</definition>
+	
+	
+<definition name="LoginSucessDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/page/home.jsp"></put-attribute>
+	</definition>
+	
+	
+</tiles-definitions>
+
+
